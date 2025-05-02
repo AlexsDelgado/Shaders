@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 05e21945c79010644a37807d8e785bb5
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _WorldSpaceTexture: {fileID: 2800000, guid: b3d4730e24858ea419873d76821eabe8, type: 3}
+  - _ScreenUVTexture: {fileID: 2800000, guid: 933774e2a6016bc4e924436fac067004, type: 3}
+  - _Mask: {fileID: 2800000, guid: 4d7e6bc97bce9a94cbbb0f6bf004198f, type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

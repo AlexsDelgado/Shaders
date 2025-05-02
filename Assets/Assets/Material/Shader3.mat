@@ -8,9 +8,9 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Shader3
-  m_Shader: {fileID: 4800000, guid: 6f2e933dde6990d40b2557456504f206, type: 3}
-  m_Parent: {fileID: 2100000, guid: b96ab21db633a2a458c8344d2b0bc425, type: 2}
-  m_ModifiedSerializedProperties: 2
+  m_Shader: {fileID: 4800000, guid: a66e124b4dcedea4fbcf82c45fbdbaf4, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 0
@@ -24,12 +24,48 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Effect:
+        m_Texture: {fileID: 2800000, guid: 68c8d5f718be91442bc06a2ecce2a808, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Effect1:
         m_Texture: {fileID: 2800000, guid: 67ddd511a4ddb1f46ba6d16f1bdb7acd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Flowmap:
+        m_Texture: {fileID: 2800000, guid: 1749567451ef71d4a9b01d4b508c6ff7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Mask:
+        m_Texture: {fileID: 2800000, guid: 151d78b88bff3254384e062a9cd72296, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TexturaBase:
+        m_Texture: {fileID: 2800000, guid: 157b94751c138d84bbe1768c672b5168, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture0:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample2:
+        m_Texture: {fileID: 2800000, guid: 08c6f29f9f609d94b8275ff3781a9eeb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texturebase:
+        m_Texture: {fileID: 2800000, guid: 0099d783d7d991e47adeb5d62c5cef8e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Float0: 0
-    - _Float2: 0
-    m_Colors: []
+    - _Noise: 1
+    - _NoiseSpeed: 0.25
+    - _PROGRESSION: 0
+    - __dirty: 0
+    m_Colors:
+    - _SpeedPanner: {r: 1, g: 1, b: 0, a: 0}
+    - _SpeedPanner1: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
