@@ -196,7 +196,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7892106618384562460, guid: 52e3f64e6bd79cc4bac97cce91def5ed, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -558
+      value: -523.1
       objectReference: {fileID: 0}
     - target: {fileID: 7892106618384562460, guid: 52e3f64e6bd79cc4bac97cce91def5ed, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -818,7 +818,7 @@ RectTransform:
   m_GameObject: {fileID: 711858222}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 432472094}
@@ -2150,7 +2150,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1-Heigthmap
+  m_text: 4 - Parallax Oclussion Mapping
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2177,8 +2177,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.36
-  m_fontSizeBase: 25.36
+  m_fontSize: 11.3
+  m_fontSizeBase: 11.3
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

@@ -89,14 +89,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Achique: 0.2
+    - _Achique: 0.19047904
     - _Achique1: 0.2
-    - _Agrande: 0.1
+    - _Agrande: 0.04575492
     - _Agrande1: 0.1
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _DissolveAmount: 0.2
+    - _DissolveAmount: 0.14772077
     - _DissolveAmount1: 0.2
     - _DstBlend: 0
     - _GlossMapScale: 1
@@ -116,7 +116,7 @@ Material:
     - __dirty: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Color3: {r: 0.06568074, g: 1, b: 0, a: 0}
+    - _Color3: {r: 0.06568072, g: 1, b: 0, a: 0}
     - _Color4: {r: 0.065324545, g: 1, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
