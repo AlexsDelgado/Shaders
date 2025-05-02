@@ -34,8 +34,8 @@ Material:
     m_Ints: []
     m_Floats:
     - _Blas: 1
-    - _DepthFadePower: 0.04316014
-    - _DepthFadeScale: 0.69574326
+    - _DepthFadePower: 0.08
+    - _DepthFadeScale: 1
     - _Direction: 1
     - _DistortionWeight: 0.8
     - _PannerSpeed: 0.25
