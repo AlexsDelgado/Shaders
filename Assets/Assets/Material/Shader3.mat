@@ -63,8 +63,8 @@ Material:
     m_Floats:
     - _Noise: 1
     - _NoiseSpeed: 0.25
-    - _PROGRESSION: 5
-    - _SpeedPanner: 5.2368164
+    - _PROGRESSION: 0.647913
+    - _SpeedPanner: 0.41329956
     - _Tilling: 8.285719
     - __dirty: 0
     m_Colors:

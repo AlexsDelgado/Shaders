@@ -106,7 +106,7 @@ Material:
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _RefPlane1: 1
+    - _RefPlane1: 0.37522888
     - _Scale: 0.1
     - _Scale1: 0.05
     - _SmoothnessTextureChannel: 0
