@@ -6,8 +6,8 @@ Shader "Custom/Wall"
 	{
 		_Texture1("Texture 0", 2D) = "white" {}
 		_RefPlane1("RefPlane", Range( 0 , 1)) = 0
-		_TextureSample2("Texture Sample 1", 2D) = "white" {}
-		_Scale1("Scale", Float) = 0.01
+		_TextureSample2("Texture Sample 1", 2D) = "bump" {}
+		_Scale1("Scale", Range( 0 , 0.1)) = 0.01
 		[HideInInspector] _texcoord( "", 2D ) = "white" {}
 		[HideInInspector] __dirty( "", Int ) = 1
 	}
@@ -116,7 +116,7 @@ Shader "Custom/Wall"
 			float3 ase_worldPos = i.worldPos;
 			float3 ase_worldViewDir = normalize( UnityWorldSpaceViewDir( ase_worldPos ) );
 			float2 OffsetPOM50 = POM( _Texture1, i.uv_texcoord, ddx(i.uv_texcoord), ddy(i.uv_texcoord), ase_worldNormal, ase_worldViewDir, i.viewDir, 8, 8, _Scale1, _RefPlane1, _Texture1_ST.xy, float2(0,0), 0 );
-			o.Normal = tex2D( _TextureSample2, OffsetPOM50 ).rgb;
+			o.Normal = UnpackNormal( tex2D( _TextureSample2, OffsetPOM50 ) );
 			float4 color52 = IsGammaSpace() ? float4(0.5754717,0.382743,0.382743,0) : float4(0.2906642,0.1210933,0.1210933,0);
 			o.Albedo = ( color52 * tex2D( _Texture1, OffsetPOM50 ) ).rgb;
 			o.Alpha = 1;
@@ -211,18 +211,18 @@ Shader "Custom/Wall"
 }
 /*ASEBEGIN
 Version=18900
-200;73;1403;682;-468.2393;52.62695;1.128045;True;False
-Node;AmplifyShaderEditor.RangedFloatNode;45;574.2444,867.7652;Inherit;False;Property;_RefPlane1;RefPlane;1;0;Create;True;0;0;0;False;0;False;0;0;0;1;0;1;FLOAT;0
+0;0;1366;707;-60.01877;-357.2794;1;True;False
 Node;AmplifyShaderEditor.ViewDirInputsCoordNode;46;591.5433,674.0443;Inherit;False;Tangent;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3
-Node;AmplifyShaderEditor.RangedFloatNode;47;640.3253,564.3905;Inherit;False;Property;_Scale1;Scale;4;0;Create;True;0;0;0;False;0;False;0.01;0.02;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.TextureCoordinatesNode;49;669.5323,228.0465;Inherit;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.TexturePropertyNode;48;438.8546,361.0345;Inherit;True;Property;_Texture1;Texture 0;0;0;Create;True;0;0;0;False;0;False;None;df6962a14fc8dc7479132473ec5de3e6;False;white;Auto;Texture2D;-1;0;2;SAMPLER2D;0;SAMPLERSTATE;1
+Node;AmplifyShaderEditor.TexturePropertyNode;48;438.8546,361.0345;Inherit;True;Property;_Texture1;Texture 0;0;0;Create;True;0;0;0;False;0;False;None;2683fd54ae0ddcd4d8d8420fce40371a;False;white;Auto;Texture2D;-1;0;2;SAMPLER2D;0;SAMPLERSTATE;1
+Node;AmplifyShaderEditor.RangedFloatNode;47;640.3253,564.3905;Inherit;False;Property;_Scale1;Scale;4;0;Create;True;0;0;0;False;0;False;0.01;0.02;0;0.1;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;45;574.2444,867.7652;Inherit;False;Property;_RefPlane1;RefPlane;1;0;Create;True;0;0;0;False;0;False;0;0.79;0;1;0;1;FLOAT;0
 Node;AmplifyShaderEditor.ParallaxOcclusionMappingNode;50;931.1002,513.5327;Inherit;False;1;8;False;-1;16;False;-1;2;0.02;0;False;1,1;False;0,0;8;0;FLOAT2;0,0;False;1;SAMPLER2D;;False;7;SAMPLERSTATE;;False;2;FLOAT;0.02;False;3;FLOAT3;0,0,0;False;4;FLOAT;0;False;5;FLOAT2;0,0;False;6;FLOAT;0;False;1;FLOAT2;0
 Node;AmplifyShaderEditor.SamplerNode;51;1259.92,404.5987;Inherit;True;Property;_TextureSample1;Texture Sample 0;1;0;Create;True;0;0;0;False;0;False;-1;None;None;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.ColorNode;52;1297.497,161.0492;Inherit;False;Constant;_Color1;Color 0;3;0;Create;True;0;0;0;False;0;False;0.5754717,0.382743,0.382743,0;0,0,0,0;True;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.RangedFloatNode;53;944.7922,760.653;Inherit;False;Property;_NormalValue1;NormalValue;3;0;Create;True;0;0;0;False;0;False;1;0;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;54;1620.849,325.4691;Inherit;False;2;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
-Node;AmplifyShaderEditor.SamplerNode;55;1231.883,657.1191;Inherit;True;Property;_TextureSample2;Texture Sample 1;2;0;Create;True;0;0;0;False;0;False;-1;None;2f6b1df7054ffa14e8a4068595aae393;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.SamplerNode;55;1257.076,652.3204;Inherit;True;Property;_TextureSample2;Texture Sample 1;2;0;Create;True;0;0;0;False;0;False;-1;None;31b5d4f22b52324408082c12144bacc6;True;0;True;bump;Auto;True;Object;-1;Auto;Texture2D;8;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1;False;6;FLOAT;0;False;7;SAMPLERSTATE;;False;5;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
 Node;AmplifyShaderEditor.StandardSurfaceOutputNode;0;1854.412,307.79;Float;False;True;-1;2;ASEMaterialInspector;0;0;Standard;Custom/Wall;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;Back;0;False;-1;0;False;-1;False;0;False;-1;0;False;-1;False;0;Opaque;0.5;True;True;0;False;Opaque;;Geometry;All;14;all;True;True;True;True;0;False;-1;False;0;False;-1;255;False;-1;255;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;-1;False;2;15;10;25;False;0.5;True;0;0;False;-1;0;False;-1;0;0;False;-1;0;False;-1;0;False;-1;0;False;-1;0;False;0;0,0,0,0;VertexOffset;True;False;Cylindrical;False;Relative;0;;-1;-1;-1;-1;0;False;0;0;False;-1;-1;0;False;-1;0;0;0;False;0.1;False;-1;0;False;-1;False;16;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT;0;False;9;FLOAT;0;False;10;FLOAT;0;False;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;12;FLOAT3;0,0,0;False;14;FLOAT4;0,0,0,0;False;15;FLOAT3;0,0,0;False;0
 WireConnection;50;0;49;0
 WireConnection;50;1;48;0
@@ -237,4 +237,4 @@ WireConnection;55;1;50;0
 WireConnection;0;0;54;0
 WireConnection;0;1;55;0
 ASEEND*/
-//CHKSM=5D52A38D85A62A5A1A498D368423FDECC7E201C0
+//CHKSM=536D6554542A4DC4B683C1EFCC4769B41020BC6F

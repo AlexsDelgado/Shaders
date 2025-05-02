@@ -64,7 +64,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture1:
-        m_Texture: {fileID: 2800000, guid: df6962a14fc8dc7479132473ec5de3e6, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2683fd54ae0ddcd4d8d8420fce40371a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TextureSample0:
@@ -76,7 +76,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TextureSample2:
-        m_Texture: {fileID: 2800000, guid: 2f6b1df7054ffa14e8a4068595aae393, type: 3}
+        m_Texture: {fileID: 2800000, guid: 31b5d4f22b52324408082c12144bacc6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _comorestaurarparedesdeladrillos3:
@@ -107,8 +107,8 @@ Material:
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _RefPlane1: 1
-    - _Scale: 0
-    - _Scale1: -0.07
+    - _Scale: 0.1
+    - _Scale1: 0.05
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
