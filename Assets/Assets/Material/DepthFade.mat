@@ -36,11 +36,12 @@ Material:
     - _Blas: 1
     - _DepthFadePower: 0.08
     - _DepthFadeScale: 1
-    - _Direction: -0.18439156
+    - _Direction: 0.2171762
     - _DistortionWeight: 0.8
-    - _PannerSpeed: 0.25
+    - _PannerSpeed: 0.37204546
     - _TextureTiling: 1.25
     - _VoronoiScale: -0.33
     m_Colors:
     - _PannerDirection: {r: 0, g: -1, b: 0, a: 0}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1

@@ -98,7 +98,7 @@ Material:
     - _Distorsion3: 0.2
     - _Distorsion4: 0.2
     - _DstBlend: 0
-    - _EdgeDistance: 0.9453003
+    - _EdgeDistance: 0.7622746
     - _EdgeLength: 15
     - _EdgePower: 0.24
     - _EdgeSoftness: 0.5
@@ -118,12 +118,12 @@ Material:
     - _OcclusionStrength: 1
     - _Oclusion: 0.41
     - _Parallax: 0.02
-    - _Power: 3.0196812
+    - _Power: 8
     - _Profundidad: 1.24
     - _Refraction: 3.84
     - _RefractionAmount: 0
     - _RefractionStrenght: 0.5
-    - _Scale: 0.5061419
+    - _Scale: 1.1267718
     - _Smoothness: 0.9
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -159,3 +159,4 @@ Material:
     - _WaveStretch: {r: 0.15, g: 0.02, b: 0, a: 0}
     - _WaveUp: {r: 0, g: 2.48, b: 0, a: 0}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1

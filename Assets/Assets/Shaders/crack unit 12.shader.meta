@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 774d4d7a578fd1449a51806ad2bcd68c
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _fondo: {fileID: 2800000, guid: 931c330df8cc6654d8688273d22f6a6a, type: 3}
+  - _lava: {fileID: 2800000, guid: b4d341dfc17bfaf4185898ae8dc734e0, type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

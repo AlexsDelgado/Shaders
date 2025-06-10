@@ -40,9 +40,9 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TexturaBase:
-        m_Texture: {fileID: 2800000, guid: fbe14ee113d2e614da924bacd7ca021f, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
+        m_Texture: {fileID: 2800000, guid: 68c8d5f718be91442bc06a2ecce2a808, type: 3}
+        m_Scale: {x: 0.5, y: 0.5}
+        m_Offset: {x: 0.25, y: 0.25}
     - _Texture0:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -63,11 +63,12 @@ Material:
     m_Floats:
     - _Noise: 1
     - _NoiseSpeed: 0.25
-    - _PROGRESSION: 0.647913
-    - _SpeedPanner: 0.41329956
-    - _Tilling: 8.285719
+    - _PROGRESSION: 1.6486925
+    - _SpeedPanner: 2.0537894
+    - _Tilling: 10
     - __dirty: 0
     m_Colors:
     - _SpeedPanner: {r: 1, g: 1, b: 0, a: 0}
     - _SpeedPanner1: {r: 1, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
+  m_AllowLocking: 1
