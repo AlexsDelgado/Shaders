@@ -4,7 +4,7 @@ Shader "opcion2"
 {
 	Properties
 	{
-		_offset("offset", Float) = 1
+		_offset("offset", Range( 1 , 5)) = 1
 		_amplitud("amplitud", Float) = 1
 		[HideInInspector] __dirty( "", Int ) = 1
 	}
@@ -117,12 +117,12 @@ Shader "opcion2"
 }
 /*ASEBEGIN
 Version=18900
-0;181;1920;270;957.6877;226.9411;1;True;False
+7;6;1352;701;1039.27;452.1874;1;True;False
 Node;AmplifyShaderEditor.SimpleTimeNode;1;-875.2589,-149.1525;Inherit;False;1;0;FLOAT;1;False;1;FLOAT;0
 Node;AmplifyShaderEditor.RangedFloatNode;2;-876.2589,-88.1525;Inherit;False;Constant;_frecuenci;frecuenci;0;0;Create;True;0;0;0;False;0;False;2;0;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;3;-877.2589,-237.1525;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.SinOpNode;5;-681.2589,-407.1525;Inherit;False;1;0;FLOAT;0;False;1;FLOAT;0
-Node;AmplifyShaderEditor.RangedFloatNode;4;-500.2589,-147.1525;Inherit;False;Property;_offset;offset;1;0;Create;True;0;0;0;False;0;False;1;1;0;0;0;1;FLOAT;0
+Node;AmplifyShaderEditor.RangedFloatNode;4;-623.2589,-132.1525;Inherit;False;Property;_offset;offset;1;0;Create;True;0;0;0;False;0;False;1;1;1;5;0;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleAddOpNode;6;-503.2589,-233.1525;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
 Node;AmplifyShaderEditor.RangedFloatNode;7;-299.2589,-145.1525;Inherit;False;Property;_amplitud;amplitud;2;0;Create;True;0;0;0;False;0;False;1;1;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.SimpleMultiplyOpNode;8;-299.2589,-231.1525;Inherit;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0
@@ -144,4 +144,4 @@ WireConnection;12;0;11;0
 WireConnection;12;1;10;0
 WireConnection;0;2;12;0
 ASEEND*/
-//CHKSM=920FFD99E039BC9E38678D513D2ADA81BB1C8E16
+//CHKSM=0A3C040BADE70C27EFFCEC219D7DB78E938C8B09
